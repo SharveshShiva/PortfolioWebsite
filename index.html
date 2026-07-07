@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharvesh Shiva | Portfolio - CS & Business Systems Engineer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Sharvesh Shiva, a B.Tech Computer Science and Business Systems student. Specialized in Java, Python, SQL, and Spring Boot. Explorer of futuristic software engineering.">
+    <meta name="keywords" content="Sharvesh Shiva, Portfolio, Software Engineer, B.Tech CSBS, Java Developer, Spring Boot, Python, SQL, Web Developer">
+    <meta name="author" content="Sharvesh Shiva">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sharvesh Shiva | Portfolio">
+    <meta property="og:description" content="Passionate Computer Science and Business Systems student building scalable software solutions.">
+    <meta property="og:image" content="assets/images/hero_developer.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Sharvesh Shiva | Portfolio">
+    <meta property="twitter:description" content="Passionate Computer Science and Business Systems student building scalable software solutions.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=3.0.1">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Custom Cursor Glow -->
+    <div id="custom-cursor-glow"></div>
+
+    <!-- Deep Eclipse Aura Elements -->
+    <div class="eclipse-auroras">
+        <div class="eclipse-glow glow-indigo"></div>
+        <div class="eclipse-glow glow-emerald"></div>
+        <div class="eclipse-mesh"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="loader-logo">Sharvesh<span>.</span></div>
+            <div class="eclipse-spinner"></div>
+            <p class="loader-text">Loading System...</p>
+        </div>
+    </div>
+
+    <!-- Sticky Header/Navbar -->
+    <header id="main-header">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="nav-logo">Sharvesh<span>.</span></a>
+            
+            <!-- Desktop Navbar Menu -->
+            <nav id="desktop-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Toggle Mobile Menu Button -->
+            <button id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav-drawer">
+        <div class="drawer-header">
+            <div class="logo">Sharvesh<span>.</span></div>
+            <button id="mobile-menu-close" aria-label="Close Navigation Menu">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#blog" class="mobile-link">Blog</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+    <div id="drawer-overlay"></div>
+
+    <!-- Main Container -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="container hero-container">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <h2 class="hero-subtitle">WELCOME TO MY PORTFOLIO</h2>
+                    <h1 class="hero-title">Hi, I'm <span class="text-glow">Sharvesh Shiva</span></h1>
+                    
+                    <!-- Animated Typing Area -->
+                    <div class="typing-container">
+                        <span class="typing-static">I am a&nbsp;</span>
+                        <span class="typing-text" id="typing-element"></span>
+                        <span class="cursor-blink">|</span>
+                    </div>
+
+                    <p class="hero-description">
+                        Passionate Computer Science and Business Systems student with strong foundations in Java, Python, SQL and Spring Boot. I enjoy building scalable software solutions, solving real-world problems, and continuously learning modern technologies.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary" id="btn-resume">
+                            <span>Download Resume</span>
+                            <i data-lucide="download"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline" id="btn-contact">
+                            <span>Contact Me</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Content: Premium Tech Framed Illustration -->
+                <div class="hero-illustration">
+                    <div class="illustration-frame">
+                        <div class="frame-edge"></div>
+                        <img src="assets/images/hero_developer.png" alt="Developer Setup Illustration" class="main-illustration-img">
+                        
+                        <!-- Floating Technology Icons -->
+                        <div class="floating-tech-icon tech-java" title="Java"><span>Java</span></div>
+                        <div class="floating-tech-icon tech-python" title="Python"><span>Py</span></div>
+                        <div class="floating-tech-icon tech-springboot" title="Spring Boot"><span>Spring</span></div>
+                        <div class="floating-tech-icon tech-sql" title="SQL"><span>SQL</span></div>
+                        <div class="floating-tech-icon tech-git" title="Git"><span>Git</span></div>
+                        <div class="floating-tech-icon tech-github" title="GitHub"><i data-lucide="github"></i></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll Down to About Section">
+                <span class="scroll-mouse">
+                    <span class="scroll-dot"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section scroll-reveal">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-title-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <!-- Bio & Stats (Radiant glass card) -->
+                    <div class="about-card glass-card">
+                        <div class="about-bio">
+                            <p>I am currently pursuing a B.Tech in Computer Science and Business Systems. I enjoy software development, backend engineering, and database management. I constantly improve my programming skills by building projects and learning modern technologies.</p>
+                            <p>I believe in continuous learning, teamwork, and solving practical problems using technology.</p>
+                        </div>
+                        
+                        <!-- Stats Grid -->
+                        <div class="about-stats" id="stats-counter-box">
+                            <div class="stat-item">
+                                <h3 class="stat-number" data-target="90">0</h3>
+                                <p class="stat-label">Java</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number" data-target="85">0</h3>
+                                <p class="stat-label">Python</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number" data-target="80">0</h3>
+                                <p class="stat-label">Spring Boot</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number" data-target="85">0</h3>
+                                <p class="stat-label">SQL</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number" data-target="80">0</h3>
+                                <p class="stat-label">Git</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Timeline (Radiant glass card) -->
+                    <div class="education-card glass-card">
+                        <h3 class="card-subtitle"><i data-lucide="graduation-cap"></i> Education</h3>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Pursuing</span>
+                                    <h4>B.Tech Computer Science and Business Systems</h4>
+                                    <p>Rajalakshmi Institute of Technology</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Secondary</span>
+                                    <h4>12th Grade</h4>
+                                    <p>Vel's Vidhyalaya Senior Secondary School</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Secondary</span>
+                                    <h4>10th Grade</h4>
+                                    <p>Vel's Vidhyalaya Senior Secondary School</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="section-title-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper color-indigo">
+                                <i data-lucide="code-2"></i>
+                            </div>
+                            <h3>Programming</h3>
+                        </div>
+                        
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>SQL</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper color-emerald">
+                                <i data-lucide="layers"></i>
+                            </div>
+                            <h3>Frameworks & DB</h3>
+                        </div>
+                        
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Spring Boot</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>MySQL</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper color-indigo">
+                                <i data-lucide="wrench"></i>
+                            </div>
+                            <h3>Tools</h3>
+                        </div>
+                        
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>GitHub</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>VS Code</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skills-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper color-emerald">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Problem Solving</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Communication</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Teamwork & Leadership</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="--width: 88%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section scroll-reveal">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="section-title-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: FamPulse -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-badge">Spring Boot</div>
+                            <h3 class="project-title">FamPulse</h3>
+                            <h4 class="project-subtitle">Real-Time Family Safety & Location Tracking</h4>
+                        </div>
+                        <div class="project-body">
+                            <p>Developed using Java and Spring Boot. Provides live location sharing and automated check-in alerts for families.</p>
+                            <div class="project-tech-tags">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                                <span>WebSocket</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <button class="btn btn-card-primary open-project-modal" data-project="fampulse">
+                                <span>Live Demo</span>
+                                <i data-lucide="external-link"></i>
+                            </button>
+                            <a href="https://github.com/SharveshShiva" target="_blank" rel="noopener" class="btn btn-card-outline">
+                                <i data-lucide="github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: SmartTask -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-badge">Java Enterprise</div>
+                            <h3 class="project-title">SmartTask</h3>
+                            <h4 class="project-subtitle">Role-Based Project & Task Management Platform</h4>
+                        </div>
+                        <div class="project-body">
+                            <p>Built a secure task management application allowing project creation, role-based access control, task assignment, and progress tracking.</p>
+                            <div class="project-tech-tags">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                                <span>Spring Security</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <button class="btn btn-card-primary open-project-modal" data-project="smarttask">
+                                <span>Live Demo</span>
+                                <i data-lucide="external-link"></i>
+                            </button>
+                            <a href="https://github.com/SharveshShiva" target="_blank" rel="noopener" class="btn btn-card-outline">
+                                <i data-lucide="github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section achievements-section scroll-reveal">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title">Achievements</h2>
+                    <div class="section-title-line"></div>
+                </div>
+
+                <div class="achievements-timeline-container">
+                    <div class="achievements-timeline-bar"></div>
+                    
+                    <div class="achievement-timeline-item left">
+                        <div class="achievement-circle">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="achievement-card glass-card">
+                            <span class="achievement-tag">Leadership</span>
+                            <h3>House Captain</h3>
+                            <p>Leadership and Team Management</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-timeline-item right">
+                        <div class="achievement-circle">
+                            <i data-lucide="edit-3"></i>
+                        </div>
+                        <div class="achievement-card glass-card">
+                            <span class="achievement-tag">Precision</span>
+                            <h3>Handwriting Competition Winner</h3>
+                            <p>Acquired awards demonstrating creative layout representations.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-timeline-item left">
+                        <div class="achievement-circle">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <div class="achievement-card glass-card">
+                            <span class="achievement-tag">Oracle</span>
+                            <h3>Oracle Databases for Developers Certification</h3>
+                            <p>Completed professional SQL database structures certification.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-timeline-item right">
+                        <div class="achievement-circle">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <div class="achievement-card glass-card">
+                            <span class="achievement-tag">Infosys</span>
+                            <h3>Infosys Java Certification</h3>
+                            <p>Certified developer credentials for Java SE core competencies.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-timeline-item left">
+                        <div class="achievement-circle">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <div class="achievement-card glass-card">
+                            <span class="achievement-tag">Scaler</span>
+                            <h3>Scaler Spring Boot Certification</h3>
+                            <p>Certified core backend capabilities in REST models and configurations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section blog-section scroll-reveal">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title">Latest Articles</h2>
+                    <div class="section-title-line"></div>
+                </div>
+
+                <div class="blog-grid">
+                    <!-- Blog Card 1 -->
+                    <article class="blog-card glass-card">
+                        <div class="blog-image-wrapper">
+                            <img src="assets/images/blog_java.png" alt="Java in 2026" class="blog-image">
+                            <div class="blog-image-overlay"></div>
+                        </div>
+                        <div class="blog-info">
+                            <div class="blog-meta">
+                                <span class="blog-category">Java</span>
+                                <span class="blog-dot"></span>
+                                <span class="blog-read-time">5 min read</span>
+                            </div>
+                            <h3 class="blog-title">Why Java is Still Relevant in 2026</h3>
+                            <p class="blog-excerpt">Explore how Java continues to power modern enterprise architectures and remain a top choice in 2026.</p>
+                            <button class="btn btn-text-link open-blog-modal" data-blog="java">
+                                <span>Read More</span>
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Blog Card 2 -->
+                    <article class="blog-card glass-card">
+                        <div class="blog-image-wrapper">
+                            <img src="assets/images/blog_springboot.png" alt="Spring Boot from Scratch" class="blog-image">
+                            <div class="blog-image-overlay"></div>
+                        </div>
+                        <div class="blog-info">
+                            <div class="blog-meta">
+                                <span class="blog-category">Backend</span>
+                                <span class="blog-dot"></span>
+                                <span class="blog-read-time">7 min read</span>
+                            </div>
+                            <h3 class="blog-title">Learning Spring Boot from Scratch</h3>
+                            <p class="blog-excerpt">A step-by-step beginner's guide to building your first scalable REST API with Spring Boot.</p>
+                            <button class="btn btn-text-link open-blog-modal" data-blog="springboot">
+                                <span>Read More</span>
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Blog Card 3 -->
+                    <article class="blog-card glass-card">
+                        <div class="blog-image-wrapper">
+                            <img src="assets/images/blog_journey.png" alt="Developer Journey" class="blog-image">
+                            <div class="blog-image-overlay"></div>
+                        </div>
+                        <div class="blog-info">
+                            <div class="blog-meta">
+                                <span class="blog-category">Career</span>
+                                <span class="blog-dot"></span>
+                                <span class="blog-read-time">6 min read</span>
+                            </div>
+                            <h3 class="blog-title">My Journey into Software Development</h3>
+                            <p class="blog-excerpt">Reflecting on the milestones, struggles, and learnings of becoming a Software Engineer.</p>
+                            <button class="btn btn-text-link open-blog-modal" data-blog="journey">
+                                <span>Read More</span>
+                                <i data-lucide="arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-title-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Details Left -->
+                    <div class="contact-info-container">
+                        <div class="contact-info-card glass-card">
+                            <h3>Contact Information</h3>
+                            <p class="contact-subtitle-text">Feel free to reach out. I am open to discussing internship opportunities, collaborative coding projects, or technology conversations.</p>
+                            
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <div class="info-icon-box">
+                                        <i data-lucide="phone"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <span>Phone</span>
+                                        <a href="tel:+918870986386">+91 8870986386</a>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon-box">
+                                        <i data-lucide="mail"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <span>Email</span>
+                                        <a href="mailto:sharveshhh088@gmail.com">sharveshhh088@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon-box">
+                                        <i data-lucide="map-pin"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <span>Location</span>
+                                        <p>Tirunelveli, Tamil Nadu</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-social-section">
+                                <h4>Follow Me</h4>
+                                <div class="social-buttons-grid">
+                                    <a href="https://github.com/SharveshShiva" target="_blank" rel="noopener" class="contact-social-btn btn-github">
+                                        <i data-lucide="github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <a href="https://linkedin.com/in/sharvesh-shiva-a-s-9639752b1" target="_blank" rel="noopener" class="contact-social-btn btn-linkedin">
+                                        <i data-lucide="linkedin"></i>
+                                        <span>LinkedIn</span>
+                                    </a>
+                                    <a href="mailto:sharveshhh088@gmail.com" class="contact-social-btn btn-email">
+                                        <i data-lucide="mail"></i>
+                                        <span>Email</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Right -->
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="glass-card contact-form">
+                            <h3>Send Message</h3>
+                            
+                            <div class="input-group">
+                                <label for="form-name">Name</label>
+                                <div class="input-field-wrapper">
+                                    <i data-lucide="user" class="input-icon"></i>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="form-email">Email</label>
+                                <div class="input-field-wrapper">
+                                    <i data-lucide="at-sign" class="input-icon"></i>
+                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="form-subject">Subject</label>
+                                <div class="input-field-wrapper">
+                                    <i data-lucide="message-square" class="input-icon"></i>
+                                    <input type="text" id="form-subject" placeholder="Project Discussion" required>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="form-message">Message</label>
+                                <div class="input-field-wrapper textarea-wrapper">
+                                    <i data-lucide="edit-2" class="input-icon textarea-icon"></i>
+                                    <textarea id="form-message" rows="5" placeholder="Hi Sharvesh, I'd like to discuss..." required></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-form">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">Sharvesh<span>.</span></a>
+                    <p>"Building software that solves real-world problems."</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-socials">
+                    <a href="https://github.com/SharveshShiva" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="https://linkedin.com/in/sharvesh-shiva-a-s-9639752b1" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="mailto:sharveshhh088@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sharvesh Shiva. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scroll-to-top" aria-label="Scroll back to top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- Success Notification Toast -->
+    <div id="contact-success-toast">
+        <div class="toast-content">
+            <i data-lucide="check-circle" class="toast-icon"></i>
+            <div class="toast-message">
+                <h4>Message Sent!</h4>
+                <p>Thank you. I will get back to you shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog & Project Modals -->
+    <div class="modal-overlay" id="modal-overlay">
+        <!-- Modal Card Container -->
+        <div class="modal-card glass-card">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-scroll-content" id="modal-dynamic-content">
+                <!-- Javascript will inject modal contents here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js?v=3.0.1"></script>
+</body>
+</html>
